@@ -1,6 +1,6 @@
 .idea
 data5.6
-sys/ini/settings.ini
-sys/tmp
-sys/logs
-sys/files
+www/sys/ini/settings.ini
+www/sys/tmp
+www/sys/logs
+www/sys/files
