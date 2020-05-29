@@ -1,0 +1,71 @@
+/*
+В данном файле содержатся предопределенные системой классы
+При создании своей темы оформления данный файл обязательно должен быть подгружен темой оформления
+*/
+
+
+* {
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: top;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+}
+
+td {    
+    padding: 0;
+}
+
+
+.DCMS_mark{
+    
+}
+
+.DCMS_nick_on{
+    
+}
+
+.DCMS_nick_off{
+    
+}
+
+.DCMS_quote{
+    border: 1px solid #ccc;
+    font-size: 90%;
+}
+.DCMS_quote_title{
+    
+}
+
+.DCMS_phpcode{
+    max-width: 600px;
+    overflow: auto;
+}
+
+.DCMS_font_bold{
+    font-weight: bold;
+}
+
+.DCMS_photo{
+    
+}
+
+.DCMS_spoiler{
+    
+}
+
+.DCMS_spoiler_title{
+    
+}
+
+.DCMS_spoiler_content{
+    
+}

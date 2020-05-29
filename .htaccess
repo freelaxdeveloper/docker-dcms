@@ -1,0 +1,33 @@
+DirectoryIndex index.php index.html
+
+# ограничения на выгрузку файлов
+php_value upload_max_filesize 100M
+php_value post_max_size 100M
+
+####################################################
+# отключаем вывод ошибок
+php_value display_errors 0
+# так безопаснее
+php_value register_globals 0
+# убираем экранирование кавычек
+php_value magic_quotes_gpc 0
+# дописываем сессию к URL
+php_value arg_separator.output &amp;
+php_value session.use_trans_sid 1
+php_value session.cookie_lifetime 0
+# включаем встроенное сжатие
+#php_value zlib.output_compression 1
+# решение проблем с кодировкой
+php_value default_charset UTF-8
+####################################################
+
+Options -Indexes
+
+# переопределяем страницы ошибок
+ErrorDocument 400 /error.php?err=400
+ErrorDocument 401 /error.php?err=401
+ErrorDocument 402 /error.php?err=402
+ErrorDocument 403 /error.php?err=403
+ErrorDocument 404 /error.php?err=404
+ErrorDocument 500 /error.php?err=500
+ErrorDocument 502 /error.php?err=502
